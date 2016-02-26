@@ -1,0 +1,24 @@
+{
+  "name": "backbone.transceiver",
+  "description": "Backbone plugin that simplifies the use of Backbone.Radio in Marionette applications.",
+  "version": "1.0.1",
+  "author": "Victor Saar <victor@chathub.io>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/c0rrupt/backbone.transceiver"
+  },
+  "main": "backbone.transceiver.js",
+  "dependencies": {
+    "underscore": ">=1.4.2",
+    "backbone": ">=1.0.0"
+  },
+  "bugs": {
+    "url": "http://github.com/c0rrupt/backbone.transceiver/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/c0rrupt/backbone.transceiver/blob/master/LICENSE"
+    }
+  ]
+}

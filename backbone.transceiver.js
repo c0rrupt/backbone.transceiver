@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-// backbone.transceiver 0.1.1
+// backbone.transceiver 1.0.2
 (function (factory) {
 
     // Set up Stickit appropriately for the environment. Start with AMD.
     if (typeof define === 'function' && define.amd)
-        define(['backbone.radio', 'backbone', 'marionette', 'exports'], factory);
+        define(['backbone.radio', 'backbone', 'marionette', 'underscore', 'exports'], factory);
 
     // Next for Node.js or CommonJS.
     else if (typeof exports === 'object')
-        factory(require('backbone.radio'), require('backbone'), require('marionette'), exports);
+        factory(require('backbone.radio'), require('backbone'), require('marionette'), require('underscore'), exports);
 
     // Finally, as a browser global.
     else
-        factory(Backbone.Radio, Backbone, Marionette);
+        factory(Backbone.Radio, Backbone, Marionette, _);
 
-}(function (Radio, Backbone, Marionette) {
+}(function (Radio, Backbone, Marionette, _) {
     'use strict';
 
     var initialize = function(obj) {
